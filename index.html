@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Dashboard</title><link rel=stylesheet href=ln-data-dashboard.fa420367.css><body>
+  <header>
+    <h1>Lightning Network topology analysis</h1>
+    <div class=header-controls>
+      <select id=layout-select>
+        <option value=auto>Auto Grid</option>
+        <option value=single>Single Column</option>
+        <option value=2x2>2×2 Grid</option>
+        <option value=3x3>3×3 Grid</option>
+      </select>
+      <button id=add-figure-btn>Add Figure</button>
+    </div>
+  </header>
+  <main id=dashboard class=layout-auto></main>
+
+  
+  <div id=modal class="hidden modal">
+    <div class=modal-content>
+      <span class=close-btn id=modal-close>×</span>
+      <div id=modal-body></div>
+    </div>
+  </div>
+
+  <script type=module src=ln-data-dashboard.1d80a623.js></script>
+
+

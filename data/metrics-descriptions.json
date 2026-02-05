@@ -1,0 +1,237 @@
+{
+  "nodes": {"name": "nodes",
+    "description": "Total number of nodes in the network graph. This represents the count of entities or vertices in the analyzed network. For more details on network analysis, see https://en.wikipedia.org/wiki/Graph_theory",
+    "unit": "count",
+    "type": "discrete"
+  },
+  "edges": {"name": "edges",
+    "description": "Total number of edges connections between nodes. This represents the relationships or links in the network. Learn more about graph edges at https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)#Edge",
+    "unit": "count",
+    "type": "discrete"
+  },
+  "components": {"name": "components",
+    "description": "Description for components.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "density": {"name": "density",
+    "description": "Network density measures how many edges are present compared to the maximum possible edges. Values range from 0 to 1. Reference: https://networkx.org/documentation/stable/reference/generated/networkx.classes.function.density.html",
+    "unit": "ratio",
+    "type": "continuous"
+  },
+  "bridges": {"name": "bridges",
+    "description": "Description for bridges.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "diameter": {"name": "diameter",
+    "description": "The longest shortest path between any two nodes in the network. This measures the maximum distance in the network. Details at https://en.wikipedia.org/wiki/Diameter_(graph_theory)",
+    "unit": "hops",
+    "type": "discrete"
+  },
+  "transitivity": {"name": "transitivity",
+    "description": "Global clustering coefficient measuring the probability that adjacent nodes are connected. See https://en.wikipedia.org/wiki/Clustering_coefficient for more information",
+    "unit": "probability",
+    "type": "continuous"
+  },
+  "average_clustering": {"name": "average_clustering",
+    "description": "Average clustering coefficient across all nodes in the network. This indicates the tendency of nodes to form clusters. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.cluster.average_clustering.html",
+    "unit": "probability",
+    "type": "continuous"
+  },
+  "degree_assortativity": {"name": "degree_assortativity",
+    "description": "Description for degree_assortativity.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "label_communities": {"name": "label_communities",
+    "description": "Description for label_communities.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "lpa_communities": {"name": "lpa_communities",
+    "description": "Description for lpa_communities.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "label_non_randomness": {"name": "label_non_randomness",
+    "description": "Description for label_non_randomness.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "lpa_non_randomness": {"name": "lpa_non_randomness",
+    "description": "Description for lpa_non_randomness.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "label_relative_non_randomness": {"name": "label_relative_non_randomness",
+    "description": "Description for label_relative_non_randomness.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "lpa_relative_non_randomness": {"name": "lpa_relative_non_randomness",
+    "description": "Description for lpa_relative_non_randomness.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "average_node_connectivity": {"name": "average_node_connectivity",
+    "description": "Description for average_node_connectivity.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "burt_effective_size": {"name": "burt_effective_size",
+    "description": "Description for burt_effective_size.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "closeness_vitality": {"name": "closeness_vitality",
+    "description": "Description for closeness_vitality.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "common_neighbor_centrality": {"name": "common_neighbor_centrality",
+    "description": "Description for common_neighbor_centrality.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "communicability_betweenness_centrality": {"name": "communicability_betweenness_centrality",
+    "description": "Description for communicability_betweenness_centrality.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "constraint": {"name": "constraint",
+    "description": "Description for constraint.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "degree_dist_entropy": {"name": "degree_dist_entropy",
+    "description": "Description for degree_dist_entropy.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "degree_dist_entropy_norm": {"name": "degree_dist_entropy_norm",
+    "description": "Description for degree_dist_entropy_norm.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "effective_size": {"name": "effective_size",
+    "description": "Description for effective_size.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "nodes_intersect_rate": {"name": "nodes_intersect_rate",
+    "description": "Description for nodes_intersect_rate.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "edges_intersect_rate": {"name": "edges_intersect_rate",
+    "description": "Description for edges_intersect_rate.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "sampled_nodes_intersect_rate_mean": {"name": "sampled_nodes_intersect_rate_mean",
+    "description": "Description for sampled_nodes_intersect_rate_mean.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "sampled_edges_intersect_rate_mean": {"name": "sampled_edges_intersect_rate_mean",
+    "description": "Description for sampled_edges_intersect_rate_mean.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "sampled_nodes_intersect_rate_std": {"name": "sampled_nodes_intersect_rate_std",
+    "description": "Description for sampled_nodes_intersect_rate_std.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "sampled_edges_intersect_rate_std": {"name": "sampled_edges_intersect_rate_std",
+    "description": "Description for sampled_edges_intersect_rate_std.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "gini_betweenness_centrality": {"name": "gini_betweenness_centrality",
+    "description": "Description for gini_betweenness_centrality.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "global_efficiency": {"name": "global_efficiency",
+    "description": "Description for global_efficiency.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "information_centrality": {"name": "information_centrality",
+    "description": "Description for information_centrality.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "jaccard_coefficient": {"name": "jaccard_coefficient",
+    "description": "Description for jaccard_coefficient.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "ks_stat": {"name": "ks_stat",
+    "description": "Description for ks_stat.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "ks_p": {"name": "ks_p",
+    "description": "Description for ks_p.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "wasserstein_distance": {"name": "wasserstein_distance",
+    "description": "Description for wasserstein_distance.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "mean_betweenness_centrality": {"name": "mean_betweenness_centrality",
+    "description": "Description for mean_betweenness_centrality.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "mean_degree": {"name": "mean_degree",
+    "description": "Description for mean_degree.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "min_edge_cover": {"name": "min_edge_cover",
+    "description": "Description for min_edge_cover.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "powlaw_alpha": {"name": "powlaw_alpha",
+    "description": "Description for powlaw_alpha.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "powlaw_k": {"name": "powlaw_k",
+    "description": "Description for powlaw_k.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "powlaw_rsq": {"name": "powlaw_rsq",
+    "description": "Description for powlaw_rsq.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "preferential_attachment": {"name": "preferential_attachment",
+    "description": "Description for preferential_attachment.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "resource_allocation_index": {"name": "resource_allocation_index",
+    "description": "Description for resource_allocation_index.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "shortest_path_length": {"name": "shortest_path_length",
+    "description": "Description for shortest_path_length.",
+    "unit": "unknown",
+    "type": "continuous"
+  },
+  "wiener_index": {"name": "wiener_index",
+    "description": "Description for wiener_index.",
+    "unit": "unknown",
+    "type": "continuous"
+  }
+}

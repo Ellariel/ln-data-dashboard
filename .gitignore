@@ -1,3 +1,11 @@
+#opencode
+node_modules/
+.dist/
+coverage/
+.env
+opencode.json
+
+
 # Logs
 logs
 *.log
