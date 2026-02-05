@@ -1,6 +1,10 @@
-# Data Dashboard
+# Lightning Network Topology Data Dashboard
 
 A responsive dashboard for visualizing timeseries data with support for multiple figures, time scales, and interactive charts.
+
+It uses data from the paper "Topology and Network Dynamics of the Lightning Network: A Comprehensive Analysis", so please refer to https://github.com/ellariel/ln-comprehensive-analysis. There is also a proper citation there if you need it.
+
+The project was created using OpenCode and the gpt-oss-120b model.
 
 ## Features
 
@@ -84,7 +88,7 @@ This creates a `dist/` folder optimized for GitHub Pages deployment.
 
 1. **Add Figure**: Click the "Add Figure" button to create a new chart
 2. **Select Metrics**: Choose one or more metrics to display in the figure
-3. **Choose Time Scale**: Use the dropdown to switch between daily/weekly/monthly/yearly views
+3. **Choose Time Scale**: Use the dropdown to switch between weekly/monthly/yearly views
 4. **Arrange Figures**: Drag figures to rearrange them, or use the layout selector
 5. **Interact**: Hover over charts for detailed information, click links in descriptions
 
@@ -159,8 +163,8 @@ MIT License - see LICENSE file for details.
 ## Troubleshooting
 
 ### Data Not Loading
-- Ensure `results/metrics.csv` exists and is properly formatted
-- Check that `results/metrics-descriptions.json` exists
+- Ensure `data/metrics.csv` exists and is properly formatted
+- Check that `data/metrics-descriptions.json` exists
 - Verify your CSV has a `datetime` column
 
 ### Charts Not Displaying
@@ -186,6 +190,4 @@ This dashboard is designed to work with the Lightning Network topology data in t
 - **Emergent Patterns**: community metrics, intersection rates
 - **Statistical Measures**: degree distributions, entropy, Gini coefficients
 
-All metrics are pre-calculated and available in `results/metrics.csv` with corresponding descriptions in `results/metrics-descriptions.json`.
-
-The project made with OpenCode and gpt-oss-120b model.
+All metrics are pre-calculated and available in `data/metrics.csv` with corresponding descriptions in `data/metrics-descriptions.json`.
