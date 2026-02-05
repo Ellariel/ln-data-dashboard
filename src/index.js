@@ -18,8 +18,8 @@ const layoutSelect = document.getElementById('layout-select');
 async function init() {
   try {
     // Load raw CSV and descriptions (store for later aggregation)
-    rawCSVData = await loadCSV('./metrics.csv');
-    metricDescriptions = await loadMetricsDesc('./metrics-descriptions.json');
+    rawCSVData = await loadCSV('./data/metrics.csv');
+    metricDescriptions = await loadMetricsDesc('./data/metrics-descriptions.json');
   } catch (e) {
     console.error('Failed to load data:', e);
     return;
