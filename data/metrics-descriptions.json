@@ -1,236 +1,283 @@
 {
-  "nodes": {"name": "nodes",
-    "description": "Total number of nodes in the network graph. This represents the count of entities or vertices in the analyzed network. For more details on network analysis, see https://en.wikipedia.org/wiki/Graph_theory",
+  "nodes": {
+    "name": "nodes",
+    "description": "Total number of nodes in the network graph.",
     "unit": "count",
     "type": "discrete"
   },
-  "edges": {"name": "edges",
-    "description": "Total number of edges connections between nodes. This represents the relationships or links in the network. Learn more about graph edges at https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)#Edge",
+  "edges": {
+    "name": "edges",
+    "description": "Total number of edges connections between nodes.",
     "unit": "count",
     "type": "discrete"
   },
-  "components": {"name": "components",
-    "description": "Description for components.",
-    "unit": "unknown",
-    "type": "continuous"
+  "components": {
+    "name": "components",
+    "description": "Number of connected components in the network graph.",
+    "unit": "count",
+    "type": "discrete"
   },
-  "density": {"name": "density",
+  "density": {
+    "name": "density",
     "description": "Network density measures how many edges are present compared to the maximum possible edges. Values range from 0 to 1. Reference: https://networkx.org/documentation/stable/reference/generated/networkx.classes.function.density.html",
     "unit": "ratio",
     "type": "continuous"
   },
-  "bridges": {"name": "bridges",
-    "description": "Description for bridges.",
-    "unit": "unknown",
-    "type": "continuous"
+  "bridges": {
+    "name": "bridges",
+    "description": "Number of bridges in the network graph. A bridge is an edge whose removal increases the number of connected components. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.bridges.html",
+    "unit": "count",
+    "type": "discrete"
   },
-  "diameter": {"name": "diameter",
+  "diameter": {
+    "name": "diameter",
     "description": "The longest shortest path between any two nodes in the network. This measures the maximum distance in the network. Details at https://en.wikipedia.org/wiki/Diameter_(graph_theory)",
     "unit": "hops",
     "type": "discrete"
   },
-  "transitivity": {"name": "transitivity",
+  "transitivity": {
+    "name": "transitivity",
     "description": "Global clustering coefficient measuring the probability that adjacent nodes are connected. See https://en.wikipedia.org/wiki/Clustering_coefficient for more information",
     "unit": "probability",
     "type": "continuous"
   },
-  "average_clustering": {"name": "average_clustering",
+  "average_clustering": {
+    "name": "average_clustering",
     "description": "Average clustering coefficient across all nodes in the network. This indicates the tendency of nodes to form clusters. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.cluster.average_clustering.html",
     "unit": "probability",
     "type": "continuous"
   },
-  "degree_assortativity": {"name": "degree_assortativity",
-    "description": "Description for degree_assortativity.",
+  "degree_assortativity": {
+    "name": "degree_assortativity",
+    "description": "The degree assortativity measures the correlation between nodes of similar degrees. A positive value indicates that nodes tend to connect to nodes with similar degrees, while a negative value indicates that nodes tend to connect to nodes with different degrees. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.assortativity.degree_assortativity_coefficient.html",
+    "unit": "ratio",
+    "type": "continuous"
+  },
+  "label_communities": {
+    "name": "label_communities",
+    "description": "Number of communities detected using the label propagation algorithm. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.label_propagation.label_communities.html",
+    "unit": "count",
+    "type": "discrete"
+  },
+  "lpa_communities": {
+    "name": "lpa_communities",
+    "description": "Number of communities detected using the label propagation algorithm. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.label_propagation.lpa_communities.html",
+    "unit": "count",
+    "type": "discrete"
+  },
+  "label_non_randomness": {
+    "name": "label_non_randomness",
+    "description": "Non-randomness measure for label propagation communities. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.label_propagation.label_non_randomness.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "label_communities": {"name": "label_communities",
-    "description": "Description for label_communities.",
+  "lpa_non_randomness": {
+    "name": "lpa_non_randomness",
+    "description": "Non-randomness measure for label propagation communities. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.label_propagation.lpa_non_randomness.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "lpa_communities": {"name": "lpa_communities",
-    "description": "Description for lpa_communities.",
+  "label_relative_non_randomness": {
+    "name": "label_relative_non_randomness",
+    "description": "Relative non-randomness measure for label propagation communities. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.label_propagation.label_relative_non_randomness.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "label_non_randomness": {"name": "label_non_randomness",
-    "description": "Description for label_non_randomness.",
+  "lpa_relative_non_randomness": {
+    "name": "lpa_relative_non_randomness",
+    "description": "Relative non-randomness measure for label propagation communities. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.community.label_propagation.lpa_relative_non_randomness.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "lpa_non_randomness": {"name": "lpa_non_randomness",
-    "description": "Description for lpa_non_randomness.",
+  "average_node_connectivity": {
+    "name": "average_node_connectivity",
+    "description": "Average node connectivity across all nodes in the network. This measures the minimum number of edges that must be removed to disconnect any pair of nodes. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.connectivity.average_node_connectivity.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "label_relative_non_randomness": {"name": "label_relative_non_randomness",
-    "description": "Description for label_relative_non_randomness.",
+  "burt_effective_size": {
+    "name": "burt_effective_size",
+    "description": "Effective size of nodes in the network according to Burt's measure. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.burt_effective_size.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "lpa_relative_non_randomness": {"name": "lpa_relative_non_randomness",
-    "description": "Description for lpa_relative_non_randomness.",
+  "closeness_vitality": {
+    "name": "closeness_vitality",
+    "description": "Closeness vitality of nodes in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.closeness_vitality.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "average_node_connectivity": {"name": "average_node_connectivity",
-    "description": "Description for average_node_connectivity.",
+  "common_neighbor_centrality": {
+    "name": "common_neighbor_centrality",
+    "description": "Common neighbor centrality of nodes in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.common_neighbor_centrality.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "burt_effective_size": {"name": "burt_effective_size",
-    "description": "Description for burt_effective_size.",
+  "communicability_betweenness_centrality": {
+    "name": "communicability_betweenness_centrality",
+    "description": "Communicability betweenness centrality of nodes in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.communicability_betweenness_centrality.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "closeness_vitality": {"name": "closeness_vitality",
-    "description": "Description for closeness_vitality.",
+  "constraint": {
+    "name": "constraint",
+    "description": "Constraint of nodes in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.constraint.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "common_neighbor_centrality": {"name": "common_neighbor_centrality",
-    "description": "Description for common_neighbor_centrality.",
+  "degree_dist_entropy": {
+    "name": "degree_dist_entropy",
+    "description": "Entropy of the degree distribution in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.entropy.degree_dist_entropy.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "communicability_betweenness_centrality": {"name": "communicability_betweenness_centrality",
-    "description": "Description for communicability_betweenness_centrality.",
+  "degree_dist_entropy_norm": {
+    "name": "degree_dist_entropy_norm",
+    "description": "Normalized entropy of the degree distribution in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.entropy.degree_dist_entropy_norm.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "constraint": {"name": "constraint",
-    "description": "Description for constraint.",
+  "effective_size": {
+    "name": "effective_size",
+    "description": "Effective size of nodes in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.effective_size.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "degree_dist_entropy": {"name": "degree_dist_entropy",
-    "description": "Description for degree_dist_entropy.",
+  "nodes_intersect_rate": {
+    "name": "nodes_intersect_rate",
+    "description": "Rate of intersection of nodes in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.intersection.nodes_intersect_rate.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "degree_dist_entropy_norm": {"name": "degree_dist_entropy_norm",
-    "description": "Description for degree_dist_entropy_norm.",
+  "edges_intersect_rate": {
+    "name": "edges_intersect_rate",
+    "description": "Rate of intersection of edges in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.intersection.edges_intersect_rate.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "effective_size": {"name": "effective_size",
-    "description": "Description for effective_size.",
+  "sampled_nodes_intersect_rate_mean": {
+    "name": "sampled_nodes_intersect_rate_mean",
+    "description": "Mean of sampled nodes intersection rate in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "nodes_intersect_rate": {"name": "nodes_intersect_rate",
-    "description": "Description for nodes_intersect_rate.",
+  "sampled_edges_intersect_rate_mean": {
+    "name": "sampled_edges_intersect_rate_mean",
+    "description": "Mean of sampled edges intersection rate in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "edges_intersect_rate": {"name": "edges_intersect_rate",
-    "description": "Description for edges_intersect_rate.",
+  "sampled_nodes_intersect_rate_std": {
+    "name": "sampled_nodes_intersect_rate_std",
+    "description": "Standard deviation of sampled nodes intersection rate in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "sampled_nodes_intersect_rate_mean": {"name": "sampled_nodes_intersect_rate_mean",
-    "description": "Description for sampled_nodes_intersect_rate_mean.",
+  "sampled_edges_intersect_rate_std": {
+    "name": "sampled_edges_intersect_rate_std",
+    "description": "Standard deviation of sampled edges intersection rate in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "sampled_edges_intersect_rate_mean": {"name": "sampled_edges_intersect_rate_mean",
-    "description": "Description for sampled_edges_intersect_rate_mean.",
+  "gini_betweenness_centrality": {
+    "name": "gini_betweenness_centrality",
+    "description": "Gini coefficient of betweenness centrality in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.gini_betweenness_centrality.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "sampled_nodes_intersect_rate_std": {"name": "sampled_nodes_intersect_rate_std",
-    "description": "Description for sampled_nodes_intersect_rate_std.",
+  "global_efficiency": {
+    "name": "global_efficiency",
+    "description": "Global efficiency of the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.efficiency.global_efficiency.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "sampled_edges_intersect_rate_std": {"name": "sampled_edges_intersect_rate_std",
-    "description": "Description for sampled_edges_intersect_rate_std.",
+  "information_centrality": {
+    "name": "information_centrality",
+    "description": "Information centrality of nodes in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.information_centrality.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "gini_betweenness_centrality": {"name": "gini_betweenness_centrality",
-    "description": "Description for gini_betweenness_centrality.",
+  "jaccard_coefficient": {
+    "name": "jaccard_coefficient",
+    "description": "Jaccard coefficient of nodes in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.similarity.jaccard_coefficient.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "global_efficiency": {"name": "global_efficiency",
-    "description": "Description for global_efficiency.",
+  "ks_stat": {
+    "name": "ks_stat",
+    "description": "Kolmogorov-Smirnov test statistic. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.ks_stat.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "information_centrality": {"name": "information_centrality",
-    "description": "Description for information_centrality.",
+  "ks_p": {
+    "name": "ks_p",
+    "description": "P-value of Kolmogorov-Smirnov test. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.ks_stat.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "jaccard_coefficient": {"name": "jaccard_coefficient",
-    "description": "Description for jaccard_coefficient.",
+  "wasserstein_distance": {
+    "name": "wasserstein_distance",
+    "description": "Wasserstein distance between degree distributions of the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.wasserstein_distance.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "ks_stat": {"name": "ks_stat",
-    "description": "Description for ks_stat.",
+  "mean_betweenness_centrality": {
+    "name": "mean_betweenness_centrality",
+    "description": "Mean betweenness centrality of nodes in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "ks_p": {"name": "ks_p",
-    "description": "Description for ks_p.",
+  "mean_degree": {
+    "name": "mean_degree",
+    "description": "Mean degree of nodes in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "wasserstein_distance": {"name": "wasserstein_distance",
-    "description": "Description for wasserstein_distance.",
+  "min_edge_cover": {
+    "name": "min_edge_cover",
+    "description": "Minimum edge cover of the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "mean_betweenness_centrality": {"name": "mean_betweenness_centrality",
-    "description": "Description for mean_betweenness_centrality.",
+  "powlaw_alpha": {
+    "name": "powlaw_alpha",
+    "description": "Power law exponent of the degree distribution in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "mean_degree": {"name": "mean_degree",
-    "description": "Description for mean_degree.",
+  "powlaw_k": {
+    "name": "powlaw_k",
+    "description": "K parameter of the power law fit to the degree distribution in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "min_edge_cover": {"name": "min_edge_cover",
-    "description": "Description for min_edge_cover.",
+  "powlaw_rsq": {
+    "name": "powlaw_rsq",
+    "description": "R-squared value of the power law fit to the degree distribution in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "powlaw_alpha": {"name": "powlaw_alpha",
-    "description": "Description for powlaw_alpha.",
+  "preferential_attachment": {
+    "name": "preferential_attachment",
+    "description": "Preferential attachment coefficient of the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.preferential_attachment.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "powlaw_k": {"name": "powlaw_k",
-    "description": "Description for powlaw_k.",
+  "resource_allocation_index": {
+    "name": "resource_allocation_index",
+    "description": "Resource allocation index of nodes in the network. Reference: https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.similarity.resource_allocation_index.html",
     "unit": "unknown",
     "type": "continuous"
   },
-  "powlaw_rsq": {"name": "powlaw_rsq",
-    "description": "Description for powlaw_rsq.",
+  "shortest_path_length": {
+    "name": "shortest_path_length",
+    "description": "Shortest path length in the network.",
     "unit": "unknown",
     "type": "continuous"
   },
-  "preferential_attachment": {"name": "preferential_attachment",
-    "description": "Description for preferential_attachment.",
-    "unit": "unknown",
-    "type": "continuous"
-  },
-  "resource_allocation_index": {"name": "resource_allocation_index",
-    "description": "Description for resource_allocation_index.",
-    "unit": "unknown",
-    "type": "continuous"
-  },
-  "shortest_path_length": {"name": "shortest_path_length",
-    "description": "Description for shortest_path_length.",
-    "unit": "unknown",
-    "type": "continuous"
-  },
-  "wiener_index": {"name": "wiener_index",
-    "description": "Description for wiener_index.",
+  "wiener_index": {
+    "name": "wiener_index",
+    "description": "Wiener index of the network.",
     "unit": "unknown",
     "type": "continuous"
   }
