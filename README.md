@@ -2,7 +2,7 @@
 
 A responsive dashboard for visualizing timeseries data with support for multiple figures, time scales, and interactive charts.
 
-It uses data from the paper "Topology and Network Dynamics of the Lightning Network: A Comprehensive Analysis", so please refer to https://github.com/ellariel/ln-comprehensive-analysis. There is also a proper citation there if you need it.
+It uses data from the paper "Topological and Temporal Stability Analysis of the Lightning Network", so please refer to https://github.com/ellariel/ln-comprehensive-analysis. There is also a proper citation there if you need it.
 
 The project was created using OpenCode and the gpt-oss-120b model.
 
